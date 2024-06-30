@@ -3,9 +3,9 @@ package com.demo.juneTwentyFour.common;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CricketCoach implements Coach {
+public class TennisCoach implements Coach {
     @Override
     public String getDailyWorkout() {
-        return "Practice for 15 minutes now 32423432 23423!!";
+        return "I'm a tennis coach";
     }
 }
