@@ -1,13 +1,20 @@
-package com.demo.juneTwentyFour;
+package com.mka.crudDemo;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class JuneTwentyFourApplicationTests {
+class CrudDemoApplicationTests {
 
 	@Test
 	void contextLoads() {
 	}
 
+  @Test
+  void main() {
+  }
+
+  @Test
+  void commandLineRunner() {
+  }
 }
