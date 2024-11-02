@@ -1,8 +1,8 @@
 spring:
   application:
-    name: crudDemo
+    name: employeeProject
   datasource:
-    url: jdbc:postgresql://localhost:5432/student_tracker
+    url: jdbc:postgresql://localhost:5432/employee_project
     username: postgres1
     password: postgres1
     driver-class-name: org.postgresql.Driver

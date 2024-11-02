@@ -1,20 +1,13 @@
-package com.mka.crudDemo;
+package com.mka.employeeProject;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CrudDemoApplicationTests {
+class EmployeeProjectApplicationTests {
 
 	@Test
 	void contextLoads() {
 	}
 
-  @Test
-  void main() {
-  }
-
-  @Test
-  void commandLineRunner() {
-  }
 }

@@ -1,15 +1,15 @@
-package com.mka.crudDemo.entity;
+package com.mka.employeeProject.entity;
 
 import jakarta.persistence.*;
 
 @Entity
-@Table(name="student")
-public class Student {
+@Table(name="employee")
+public class Employee {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name="id")
-  private int id;
+  private Long id;
 
   @Column(name="first_name")
   private String firstName;
@@ -20,20 +20,25 @@ public class Student {
   @Column(name="email")
   private String email;
 
-  public Student() {}
+  @Column(name="phone_number")
+  private String phoneNumber;
 
-  public Student(String firstName, String lastName, String email) {
+  public Employee() {
+  }
+
+  public Employee(String firstName, String lastName, String email, String phoneNumber) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.email = email;
+    this.phoneNumber = phoneNumber;
   }
 
-  public int getId() {
-    return id;
-  }
-
-  public void setId(int id) {
+  public void setId(Long id) {
     this.id = id;
+  }
+
+  public Long getId() {
+    return id;
   }
 
   public String getFirstName() {
@@ -60,13 +65,22 @@ public class Student {
     this.email = email;
   }
 
+  public String getPhoneNumber() {
+    return phoneNumber;
+  }
+
+  public void setPhoneNumber(String phoneNumber) {
+    this.phoneNumber = phoneNumber;
+  }
+
   @Override
   public String toString() {
-    return "Student{" +
+    return "Employee{" +
         "id=" + id +
         ", firstName='" + firstName + '\'' +
         ", lastName='" + lastName + '\'' +
         ", email='" + email + '\'' +
+        ", phoneNumber='" + phoneNumber + '\'' +
         '}';
   }
 }
