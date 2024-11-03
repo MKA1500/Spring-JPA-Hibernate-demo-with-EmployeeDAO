@@ -1,10 +1,11 @@
-package com.mka.employeeProject.dao;
+package com.mka.employeeProject.service;
 
 import com.mka.employeeProject.entity.Employee;
 
 import java.util.List;
 
-public interface EmployeeDAO {
+public interface EmployeeService {
+
   List<Employee> findAllEmployees();
 
   Employee findEmployeeById(Long id);
